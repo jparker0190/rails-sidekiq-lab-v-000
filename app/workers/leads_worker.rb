@@ -3,6 +3,7 @@ class SongsWorker
   include Sidekiq::Worker
   def perform(leads_file)
     CSV.foreach(leads_file, headers: true) do |lead|
-      Artist.create(email: lead[0], first_name: lead[1], last_name: lead[2])
+      Artist.create(name: lead[1], title: lead[0])
   end
 end
+Song Clean,ARTIST CLEAN,Release Year,COMBINED,First?,Year?,PlayCount,F*G
