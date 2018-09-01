@@ -6,3 +6,4 @@ class SongsWorker
       Artist.create(name: lead[1], title: lead[0])
   end
 end
+end
