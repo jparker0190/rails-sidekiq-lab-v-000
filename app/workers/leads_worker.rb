@@ -6,4 +6,3 @@ class SongsWorker
       Artist.create(name: lead[1], title: lead[0])
   end
 end
-Song Clean,ARTIST CLEAN,Release Year,COMBINED,First?,Year?,PlayCount,F*G
